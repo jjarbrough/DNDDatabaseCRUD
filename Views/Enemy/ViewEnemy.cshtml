@@ -1,0 +1,41 @@
+﻿@model Enemy
+
+<h3>@Model.name Information</h3>
+
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>XP</th>
+        <th>Constitution Score</th>
+        <th>Gold</th>
+        <th>Weapon Type</th>
+        <th>Name</th>
+        <th>Health</th>
+        <th>Damage Die</th>
+        <th>Is Alive(auto set to true)</th>
+    </tr>
+    <tr>
+        <td>@Model.idEnemies</td>
+        <td>@Model.xp</td>
+        <td>@Model.conScore</td>
+        <td>@Model.gold</td>
+        <td>@Model.weaponType</td>
+        <td>@Model.name</td>
+        <td>@Model.health</td>
+        <td>@Model.damageDie</td>
+        <td>@Model.isAlive</td>
+    </tr>
+</table>
+
+<div style="display: block">
+    <a href="/Enemy/UpdateEnemy/@Model.idEnemies">Update this Enemy</a>
+</div>
+
+<div style="display: block">
+
+    @using (Html.BeginForm("DeleteEnemy", "Enemy", "Post"))
+    {
+        <input type="hidden" asp-for="idEnemies" value="@Model.idEnemies" />
+        <input type="submit" onclick="return confirm('Are you sure?')" value="Delete this Enemy" />
+    }
+</div>

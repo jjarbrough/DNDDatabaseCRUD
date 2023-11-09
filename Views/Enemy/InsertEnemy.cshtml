@@ -1,0 +1,31 @@
+﻿@model Enemy
+
+<h2>Create a New Enemy</h2>
+
+@using (Html.BeginForm("InsertEnemyToDatabase", "Enemy", "Post"))
+{
+    <input asp-for="idEnemies" type="hidden" value="" />
+
+    <label asp-for="name" class="control-label">Name</label>
+    <input type="text" name="Name" class="form-control" value="" />
+
+    <label asp-for="xp" class="control-label">XP</label>
+    <input type="number" step="1" name="xp" class="form-control" />
+
+    <label asp-for="conScore" class="control-label">Constitution Score</label>
+    <input type="number" step="1" name="conScore" class="form-control" />
+
+    <label asp-for="gold" class="control-label">Gold</label>
+    <input type="number" step="1" name="gold" class="form-control" />
+
+    <label asp-for="weaponType" class="control-label">Weapon Type</label>
+    <input type="text" name="weaponType" class="form-control" value="" />
+
+    <label asp-for="health" class="control-label">Health</label>
+    <input type="number" step="1" name="health" class="form-control" />
+
+    <label asp-for="damageDie" class="control-label">Damage Die</label>
+    <input type="number" step="1" name="damageDie" class="form-control" />
+
+    <input type="submit" value="Create Enemy" class="btn btn-primary" />
+}

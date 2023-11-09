@@ -1,0 +1,37 @@
+﻿@model IEnumerable<Enemy>
+
+<h2>Enemies</h2>
+
+<div style="display: block">
+    <a href=/Enemy/InsertEnemy/>Create a New Enemy</a>
+</div>
+
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>XP</th>
+        <th>Constitution Score</th>
+        <th>Gold</th>
+        <th>Weapon Type</th>
+        <th>Name</th>
+        <th>Health</th>
+        <th>Damage Die</th>
+        <th>Is Alive(auto set to true)</th>
+    </tr>
+
+    @foreach (var enemy in @Model)
+    {
+        <tr>
+            <td><a href=/Enemy/ViewEnemy/@enemy.idEnemies>@enemy.idEnemies</a></td>
+            <td>@enemy.xp</td>
+            <td>@enemy.conScore</td>
+            <td>@enemy.gold</td>
+            <td>@enemy.weaponType</td>
+            <td>@enemy.name</td>
+            <td>@enemy.health</td>
+            <td>@enemy.damageDie</td>
+            <td>@enemy.isAlive</td>
+        </tr>
+    }
+
+</table>
