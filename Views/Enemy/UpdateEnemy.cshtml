@@ -2,31 +2,38 @@
 
 <h2>Update @Model.name</h2>
 
+<div class="bg-image"
+     style="
+    background-image: url('https://images.ctfassets.net/swt2dsco9mfe/6T49mu0jou1RBEWlD9c57D/70dfa523bf71cda0c7a56ad12645f8c7/1280x960-jam-3.jpg');
+    height: 100vh;
+    ">
+
 @using (Html.BeginForm("UpdateEnemyToDatabase", "Enemy", "Post"))
 {
-    <input asp-for="idEnemies" type="hidden" value="@Model.idEnemies" />
+        <input asp-for="idEnemies" style="color:white;" type="hidden" value="@Model.idEnemies" />
 
-    <label asp-for="name" class="control-label">Name</label>
+        <label asp-for="name" style="color:white;" class="control-label">Name</label>
     <input type="text" name="Name" class="form-control" value="@Model.name" />
 
-    <label asp-for="xp" class="control-label">XP</label>
+        <label asp-for="xp" style="color:white;" class="control-label">XP</label>
     <input type="number" step="1" name="xp" class="form-control" value="@Model.xp" />
 
-    <label asp-for="conScore" class="control-label">Constitution Score</label>
+        <label asp-for="conScore" style="color:white;" class="control-label">Constitution Score</label>
     <input type="number" step="1" name="conScore" class="form-control" value="@Model.conScore" />
 
-    <label asp-for="gold" class="control-label">Gold</label>
+        <label asp-for="gold" style="color:white;" class="control-label">Gold</label>
     <input type="number" step="1" name="gold" class="form-control" value="@Model.gold" />
 
-    <label asp-for="weaponType" class="control-label">Weapon Type</label>
+        <label asp-for="weaponType" style="color:white;" class="control-label">Weapon Type</label>
     <input type="text" name="weaponType" class="form-control" value="@Model.weaponType" />
 
-    <label asp-for="health" class="control-label">Health</label>
+        <label asp-for="health" style="color:white;" class="control-label">Health</label>
     <input type="number" step="1" name="health" class="form-control" value="@Model.health" />
 
-    <label asp-for="damageDie" class="control-label">Damage Die</label>
+        <label asp-for="damageDie" style="color:white;" class="control-label">Damage Die</label>
     <input type="number" step="1" name="damageDie" class="form-control" value="@Model.damageDie" />
 
 
-    <input type="submit" value="Update Enemy" class="btn btn-primary" />
+        <input type="submit" style="color:white;" value="Update Enemy" class="btn btn-primary" />
 }
+</div>

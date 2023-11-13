@@ -2,36 +2,43 @@
 
 <h2>Enemies</h2>
 
+<div class="bg-image"
+     style="
+    background-image: url('https://images.ctfassets.net/swt2dsco9mfe/492q2UL1hPvAojGcBUZkjW/9d1212ccad27002cb6a05d3b7d96debf/1280x960-kubrick.jpg');
+    height: 100vh;
+    ">
+
 <div style="display: block">
     <a href=/Enemy/InsertEnemy/>Create a New Enemy</a>
 </div>
 
 <table class="table">
     <tr>
-        <th>ID</th>
-        <th>XP</th>
-        <th>Constitution Score</th>
-        <th>Gold</th>
-        <th>Weapon Type</th>
-        <th>Name</th>
-        <th>Health</th>
-        <th>Damage Die</th>
-        <th>Is Alive(auto set to true)</th>
+            <th style ="color:white;">ID</th>
+            <th style ="color:white;">XP</th>
+            <th style ="color:white;">Constitution Score</th>
+            <th style ="color:white;">Gold</th>
+            <th style ="color:white;">Weapon Type</th>
+            <th style ="color:white;">Name</th>
+            <th style ="color:white;">Health</th>
+            <th style="color:white;">Damage Die</th>
+            <th style="color:white;">Is Alive(auto set to true)</th>
     </tr>
 
     @foreach (var enemy in @Model)
     {
         <tr>
             <td><a href=/Enemy/ViewEnemy/@enemy.idEnemies>@enemy.idEnemies</a></td>
-            <td>@enemy.xp</td>
-            <td>@enemy.conScore</td>
-            <td>@enemy.gold</td>
-            <td>@enemy.weaponType</td>
-            <td>@enemy.name</td>
-            <td>@enemy.health</td>
-            <td>@enemy.damageDie</td>
-            <td>@enemy.isAlive</td>
+                <td style="color:white;">@enemy.xp</td>
+                <td style="color:white;">@enemy.conScore</td>
+                <td style="color:white;">@enemy.gold</td>
+                <td style="color:white;">@enemy.weaponType</td>
+                <td style="color:white;">@enemy.name</td>
+                <td style="color:white;">@enemy.health</td>
+                <td style="color:white;">@enemy.damageDie</td>
+                <td style="color:white;">@enemy.isAlive</td>
         </tr>
     }
 
 </table>
+</div>

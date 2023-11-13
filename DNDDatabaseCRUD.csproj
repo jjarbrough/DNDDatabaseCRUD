@@ -11,4 +11,10 @@
     <PackageReference Include="MySql.Data" Version="8.2.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Views\Home\forestBackGround.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

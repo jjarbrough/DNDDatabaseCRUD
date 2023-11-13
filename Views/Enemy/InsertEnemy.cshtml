@@ -2,30 +2,37 @@
 
 <h2>Create a New Enemy</h2>
 
+<div class="bg-image"
+     style="
+    background-image: url('https://images.ctfassets.net/swt2dsco9mfe/27UgHIjT8uftFpofgrGwYs/fb5e966d7ac925f440be87ab9154b80f/Fizban_1280x960_Wallpaper2.jpg');
+    height: 100vh;
+    ">
+
 @using (Html.BeginForm("InsertEnemyToDatabase", "Enemy", "Post"))
 {
     <input asp-for="idEnemies" type="hidden" value="" />
 
-    <label asp-for="name" class="control-label">Name</label>
+        <label asp-for="name" style="color:white;" class="control-label">Name</label>
     <input type="text" name="Name" class="form-control" value="" />
 
-    <label asp-for="xp" class="control-label">XP</label>
+        <label asp-for="xp" style="color:white;" class="control-label">XP</label>
     <input type="number" step="1" name="xp" class="form-control" />
 
-    <label asp-for="conScore" class="control-label">Constitution Score</label>
+        <label asp-for="conScore" style="color:white;" class="control-label">Constitution Score</label>
     <input type="number" step="1" name="conScore" class="form-control" />
 
-    <label asp-for="gold" class="control-label">Gold</label>
+        <label asp-for="gold" style="color:white;" class="control-label">Gold</label>
     <input type="number" step="1" name="gold" class="form-control" />
 
-    <label asp-for="weaponType" class="control-label">Weapon Type</label>
+        <label asp-for="weaponType" style="color:white;" class="control-label">Weapon Type</label>
     <input type="text" name="weaponType" class="form-control" value="" />
 
-    <label asp-for="health" class="control-label">Health</label>
+        <label asp-for="health" style="color:white;" class="control-label">Health</label>
     <input type="number" step="1" name="health" class="form-control" />
 
-    <label asp-for="damageDie" class="control-label">Damage Die</label>
+        <label asp-for="damageDie" style="color:white;" class="control-label">Damage Die</label>
     <input type="number" step="1" name="damageDie" class="form-control" />
 
-    <input type="submit" value="Create Enemy" class="btn btn-primary" />
+        <input type="submit" style="color:white;" value="Create Enemy" class="btn btn-primary" />
 }
+</div>

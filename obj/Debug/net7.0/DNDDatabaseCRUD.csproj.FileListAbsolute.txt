@@ -54,3 +54,4 @@ C:\Users\jjarb\OneDrive\Desktop\repos\DNDDatabaseCRUD\obj\Debug\net7.0\refint\DN
 C:\Users\jjarb\OneDrive\Desktop\repos\DNDDatabaseCRUD\obj\Debug\net7.0\DNDDatabaseCRUD.pdb
 C:\Users\jjarb\OneDrive\Desktop\repos\DNDDatabaseCRUD\obj\Debug\net7.0\DNDDatabaseCRUD.genruntimeconfig.cache
 C:\Users\jjarb\OneDrive\Desktop\repos\DNDDatabaseCRUD\obj\Debug\net7.0\ref\DNDDatabaseCRUD.dll
+C:\Users\jjarb\OneDrive\Desktop\repos\DNDDatabaseCRUD\bin\Debug\net7.0\Views\Home\forestBackGround.jpg

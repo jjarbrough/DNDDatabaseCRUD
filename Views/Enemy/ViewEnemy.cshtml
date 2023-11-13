@@ -2,28 +2,34 @@
 
 <h3>@Model.name Information</h3>
 
+<div class="bg-image"
+     style="
+    background-image: url('https://images.ctfassets.net/swt2dsco9mfe/3mu0p1gGUdYDDo2YYj5IK0/777cb0f5e2ae01560d56467bae14a1c7/1280x960-sts.jpeg');
+    height: 100vh;
+    ">
+
 <table class="table">
     <tr>
-        <th>ID</th>
-        <th>XP</th>
-        <th>Constitution Score</th>
-        <th>Gold</th>
-        <th>Weapon Type</th>
-        <th>Name</th>
-        <th>Health</th>
-        <th>Damage Die</th>
-        <th>Is Alive(auto set to true)</th>
+            <th style="color:white;">ID</th>
+            <th style="color:white;">XP</th>
+            <th style="color:white;">Constitution Score</th>
+            <th style="color:white;">Gold</th>
+            <th style="color:white;">Weapon Type</th>
+            <th style="color:white;">Name</th>
+            <th style="color:white;">Health</th>
+            <th style="color:white;">Damage Die</th>
+            <th style="color:white;">Is Alive(auto set to true)</th>
     </tr>
     <tr>
-        <td>@Model.idEnemies</td>
-        <td>@Model.xp</td>
-        <td>@Model.conScore</td>
-        <td>@Model.gold</td>
-        <td>@Model.weaponType</td>
-        <td>@Model.name</td>
-        <td>@Model.health</td>
-        <td>@Model.damageDie</td>
-        <td>@Model.isAlive</td>
+            <td style="color:white;">@Model.idEnemies</td>
+            <td style="color:white;">@Model.xp</td>
+            <td style="color:white;">@Model.conScore</td>
+            <td style="color:white;">@Model.gold</td>
+            <td style="color:white;">@Model.weaponType</td>
+            <td style="color:white;">@Model.name</td>
+            <td style="color:white;">@Model.health</td>
+            <td style="color:white;">@Model.damageDie</td>
+            <td style="color:white;">@Model.isAlive</td>
     </tr>
 </table>
 
@@ -38,4 +44,5 @@
         <input type="hidden" asp-for="idEnemies" value="@Model.idEnemies" />
         <input type="submit" onclick="return confirm('Are you sure?')" value="Delete this Enemy" />
     }
+</div>
 </div>
