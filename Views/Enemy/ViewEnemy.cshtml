@@ -1,12 +1,12 @@
 ﻿@model Enemy
 
-<h3>@Model.name Information</h3>
 
-<div class="bg-image"
+<body class="bg-image"
      style="
     background-image: url('https://images.ctfassets.net/swt2dsco9mfe/3mu0p1gGUdYDDo2YYj5IK0/777cb0f5e2ae01560d56467bae14a1c7/1280x960-sts.jpeg');
     height: 100vh;
     ">
+    <h3 style ="color:white;">@Model.name Information</h3>
 
 <table class="table">
     <tr>
@@ -34,7 +34,9 @@
 </table>
 
 <div style="display: block">
-    <a href="/Enemy/UpdateEnemy/@Model.idEnemies">Update this Enemy</a>
+        <form action="/Enemy/UpdateEnemy/@Model.idEnemies">
+            <input type="submit" value="Update Enemy" />
+        </form>
 </div>
 
 <div style="display: block">
@@ -45,4 +47,4 @@
         <input type="submit" onclick="return confirm('Are you sure?')" value="Delete this Enemy" />
     }
 </div>
-</div>
+</body>

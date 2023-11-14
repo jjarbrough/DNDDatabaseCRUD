@@ -1,12 +1,12 @@
 ﻿@model Enemy
 
-<h2>Create a New Enemy</h2>
 
-<div class="bg-image"
+<body class="bg-image"
      style="
     background-image: url('https://images.ctfassets.net/swt2dsco9mfe/27UgHIjT8uftFpofgrGwYs/fb5e966d7ac925f440be87ab9154b80f/Fizban_1280x960_Wallpaper2.jpg');
     height: 100vh;
     ">
+<h2 style ="color:white;">Create a New Enemy</h2>
 
 @using (Html.BeginForm("InsertEnemyToDatabase", "Enemy", "Post"))
 {
@@ -35,4 +35,4 @@
 
         <input type="submit" style="color:white;" value="Create Enemy" class="btn btn-primary" />
 }
-</div>
+</body>

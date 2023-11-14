@@ -1,5 +1,6 @@
 html {
   font-size: 14px;
+  height: 100%
 }
 
 @media (min-width: 768px) {
@@ -18,9 +19,24 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+  height: 100%
 }
 
 * {
     font-family: "Cinzel", sans-serif;
+}
+
+.bg-image {
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border : none;
+}
+
+.title {
+    color: white;
 }

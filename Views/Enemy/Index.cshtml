@@ -1,15 +1,17 @@
 ﻿@model IEnumerable<Enemy>
 
-<h2>Enemies</h2>
 
-<div class="bg-image"
+<body class="bg-image"
      style="
     background-image: url('https://images.ctfassets.net/swt2dsco9mfe/492q2UL1hPvAojGcBUZkjW/9d1212ccad27002cb6a05d3b7d96debf/1280x960-kubrick.jpg');
     height: 100vh;
     ">
+    <h2 style="color:white;">Enemies</h2>
 
 <div style="display: block">
-    <a href=/Enemy/InsertEnemy/>Create a New Enemy</a>
+        <form action="/Enemy/InsertEnemy">
+            <input type="submit" value="Create new enemy" />
+        </form>
 </div>
 
 <table class="table">
@@ -28,7 +30,11 @@
     @foreach (var enemy in @Model)
     {
         <tr>
-            <td><a href=/Enemy/ViewEnemy/@enemy.idEnemies>@enemy.idEnemies</a></td>
+            <td>
+                    <form action="/Enemy/ViewEnemy/@enemy.idEnemies">
+                        <input type="submit" value="@enemy.idEnemies" />
+                    </form>
+                </td>
                 <td style="color:white;">@enemy.xp</td>
                 <td style="color:white;">@enemy.conScore</td>
                 <td style="color:white;">@enemy.gold</td>
@@ -41,4 +47,4 @@
     }
 
 </table>
-</div>
+</body>

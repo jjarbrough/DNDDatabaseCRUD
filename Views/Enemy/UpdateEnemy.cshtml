@@ -1,12 +1,13 @@
 ﻿@model Enemy
 
-<h2>Update @Model.name</h2>
 
-<div class="bg-image"
+<body class="bg-image"
      style="
     background-image: url('https://images.ctfassets.net/swt2dsco9mfe/6T49mu0jou1RBEWlD9c57D/70dfa523bf71cda0c7a56ad12645f8c7/1280x960-jam-3.jpg');
     height: 100vh;
+    background-size:cover;
     ">
+<h2 style ="color:white;">Update @Model.name</h2>
 
 @using (Html.BeginForm("UpdateEnemyToDatabase", "Enemy", "Post"))
 {
@@ -36,4 +37,4 @@
 
         <input type="submit" style="color:white;" value="Update Enemy" class="btn btn-primary" />
 }
-</div>
+</body>
