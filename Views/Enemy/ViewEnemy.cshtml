@@ -35,7 +35,7 @@
 
 <div style="display: block">
         <form action="/Enemy/UpdateEnemy/@Model.idEnemies">
-            <input type="submit" value="Update Enemy" />
+            <input type="submit" value="Update Enemy" class="button"/>
         </form>
 </div>
 
@@ -44,7 +44,7 @@
     @using (Html.BeginForm("DeleteEnemy", "Enemy", "Post"))
     {
         <input type="hidden" asp-for="idEnemies" value="@Model.idEnemies" />
-        <input type="submit" onclick="return confirm('Are you sure?')" value="Delete this Enemy" />
+            <input type="submit" onclick="return confirm('Are you sure?')" value="Delete this Enemy" class="button" />
     }
 </div>
 </body>
